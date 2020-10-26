@@ -6,6 +6,7 @@ import ItemDetail from './components/ItemDetail';
 import ItemDetailContainer from './containers/ItemDetailContainer';
 import Booking from './components/Booking';
 import Login from './components/Login';
+import AdminManage from './components/AdminManage';
 
 export default class App extends Component {
   render() {
@@ -23,6 +24,7 @@ export default class App extends Component {
         <Route exact path="/admin">
           <Login />
         </Route>
+
       </Router>
     )
   }

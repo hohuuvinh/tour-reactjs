@@ -5,7 +5,7 @@ import { actFetchItemsRequest } from './../actions/index';
 import TopItemChild from './../components/TopItemChild';
 
 
-class TopItemContainer extends Component {
+class AdminListContainer extends Component {
     componentDidMount() {
         this.props.fetchAllItems();
     }
@@ -23,7 +23,7 @@ class TopItemContainer extends Component {
         result = ItemRD.map((Item2, index) => {
             return (
                 <>
-                    <TopItemChild key={index} item2={Item2} index={index} />
+                    <AdminList key={index} item2={Item2} index={index} />
                 </>
             )
         })
@@ -42,4 +42,4 @@ const mapDispatchToProps = (dispatch, props) => {
         }
     }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(TopItemContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(AdminListContainer);

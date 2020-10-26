@@ -27,7 +27,7 @@ function ItemDetail(props) {
 
                     </div>
                     <div>
-                        <p style={{ color: 'darkblue' }}>Tour {item.address}</p>
+                        <p style={{ color: 'darkblue' }}>Tour {item.title}</p>
                     </div>
                     <div style={{ background: '#E6E6FA' }} className="p-1 mb-3">
                         <p style={{ fontSize: '14px' }}>{item.content}</p>
@@ -35,22 +35,22 @@ function ItemDetail(props) {
                     {/* ----------- */}
                     <div className="row m-0 mb-3">
                         <div className="col-4 p-0">
-                            <img src="https://www.tourismdanang.vn/wp-content/uploads/Linh-Ung-Tu.jpg" height="100%" width="100%" />
+                            <img src={item.image} height="100%" width="100%" />
                         </div>
                         <div className="col-8">
                             <div className="bg-info p-1" style={{ width: '35%' }}>
-                                <p className="text-white m-0">Khởi hành từ {item.address}</p>
+                                <p className="text-white m-0">Khởi hành từ {item.journeys}</p>
                             </div>
                             <div>
                                 <p>
-                                    <font className="font-weight-bold">Phương tiện:</font> Máy Bay + Ô tô
-        <br />
-                                    <font className="font-weight-bold">Thời gian:</font> {item.note}
+                                    <font className="font-weight-bold">Phương tiện:</font> {item.start}
                                     <br />
-                                    <font className="font-weight-bold">Lịch trình:</font> {item.address}
+                                    <font className="font-weight-bold">Thời gian:</font> {item.time}
                                     <br />
-                                    <font className="font-weight-bold">Lịch khởi hành:</font> Thứ 5 và Thứ 7 hàng tuần
-        <br />
+                                    <font className="font-weight-bold">Lịch trình:</font> {item.calendar}
+                                    <br />
+                                    <font className="font-weight-bold">Lịch khởi hành:</font> {item.daystart}
+                                    <br />
                                     <font className="font-weight-bold">Giá tour:</font> <font className="text-danger" style={{ fontSize: '18px' }}>{item.price} VNĐ</font>
                                 </p>
                             </div>

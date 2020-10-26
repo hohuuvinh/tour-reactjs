@@ -13,7 +13,7 @@ export default class TopItemChild extends Component {
                         <img src={item2.image} className="card-img-top" alt="..." width="100%" height="150px" />
                         <div className="card-body">
                             <h5 className="card-title">{item2.title}</h5>
-                            <p className="card-text"><font className="font-weight-bold">Hành trình:{item2.content}</font></p>
+                            <p className="card-text"><font className="font-weight-bold">Hành trình:{item2.address}</font></p>
                             <div className="row">
                                 <div className="col-6">
                                     <p className="card-text">

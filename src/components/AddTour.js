@@ -8,6 +8,15 @@ function AddTour(props) {
         title: "",
         journeys: "",
         start: "",
+        time: "",
+        calendar: "",
+        daystart: "",
+        expediency: "",
+        note: "",
+        content: "",
+        catalogue: "",
+        address: "",
+        price: "",
         image: ""
 
     })
@@ -48,6 +57,15 @@ function AddTour(props) {
             title: data.title,
             journeys: data.journeys,
             start: data.start,
+            time: data.time,
+            calendar: data.calendar,
+            daystart: data.daystart,
+            expediency: data.expediency,
+            note: data.note,
+            content: data.content,
+            catalogue: data.catalogue,
+            address: data.address,
+            price: parseFloat(data.price),
             image: image
         })
             .then(res => {
@@ -56,7 +74,7 @@ function AddTour(props) {
     }
 
     return (
-        <div className="col-lg-9 col-md-9 p-0" style={{}}>
+        <div className="col-lg-12 col-md-12 p-0" style={{}}>
             <div className="row m-0">
                 <div className="col-12 p-2">
                     <div className="bg-white p-3 " style={{ borderRadius: '10px', width: '100%', height: '575px' }}>
@@ -95,63 +113,72 @@ function AddTour(props) {
                                                 onChange={(e) => handle(e)} value={data.name} />
                                         </div>
                                     </div>
-                                    {/* <div className="col-3" style={{ height: '100px' }}>
+                                    <div className="col-3" style={{ height: '100px' }}>
                                         <div className="form-group">
                                             <label htmlFor="exampleInputEmail1">Thời gian</label>
-                                            <input type="email" className="form-control" id="time" name="time" />
+                                            <input type="text" className="form-control" id="time" name="time"
+                                                onChange={(e) => handle(e)} value={data.name} />
                                         </div>
                                     </div>
                                     <div className="col-6" style={{ height: '100px' }}>
                                         <div className="form-group">
                                             <label htmlFor="exampleInputEmail1">Mô tả Tour</label>
-                                            <textarea className="form-control" id="address" name="address"></textarea>
+                                            <textarea className="form-control" id="address" name="address"
+                                                onChange={(e) => handle(e)} value={data.name}></textarea>
 
                                         </div>
                                     </div>
                                     <div className="col-6" style={{ height: '100px' }}>
                                         <div className="form-group">
                                             <label htmlFor="exampleInputEmail1">Mô tả Tour 2</label>
-                                            <textarea className="form-control" id="note" name="note"></textarea>
+                                            <textarea className="form-control" id="note" name="note"
+                                                onChange={(e) => handle(e)} value={data.name}></textarea>
 
                                         </div>
                                     </div>
                                     <div className="col-6" style={{ height: '100px' }}>
                                         <div className="form-group">
                                             <label htmlFor="exampleInputEmail1">Danh Mục</label>
-                                            <input type="email" className="form-control" id="catalogue" name="catalogue" />
+                                            <input type="text" className="form-control" id="catalogue" name="catalogue"
+                                                onChange={(e) => handle(e)} value={data.name} />
                                         </div>
                                     </div>
                                     <div className="col-6" style={{ height: '100px' }}>
                                         <div className="form-group">
                                             <label htmlFor="exampleInputEmail1">Nội dung</label>
-                                            <textarea className="form-control" id="content" name="content"></textarea>
+                                            <textarea className="form-control" id="content" name="content"
+                                                onChange={(e) => handle(e)} value={data.name}></textarea>
 
                                         </div>
                                     </div>
                                     <div className="col-3" style={{ height: '100px' }}>
                                         <div className="form-group">
                                             <label htmlFor="exampleInputEmail1">Lịch trình</label>
-                                            <input type="email" className="form-control" id="calendar" name="calendar" />
+                                            <input type="text" className="form-control" id="calendar" name="calendar"
+                                                onChange={(e) => handle(e)} value={data.name} />
                                         </div>
                                     </div>
                                     <div className="col-3" style={{ height: '100px' }}>
                                         <div className="form-group">
                                             <label htmlFor="exampleInputEmail1">Lịch khởi hành</label>
-                                            <input type="email" className="form-control" id="daystart" name="daystart" />
+                                            <input type="text" className="form-control" id="daystart" name="daystart"
+                                                onChange={(e) => handle(e)} value={data.name} />
                                         </div>
                                     </div>
                                     <div className="col-3" style={{ height: '100px' }}>
                                         <div className="form-group">
                                             <label htmlFor="exampleInputEmail1">Gía Tour</label>
-                                            <input type="email" className="form-control" id="price" name="price" />
+                                            <input type="text" className="form-control" id="price" name="price"
+                                                onChange={(e) => handle(e)} value={data.name} />
                                         </div>
                                     </div>
                                     <div className="col-3" style={{ height: '100px' }}>
                                         <div className="form-group">
                                             <label htmlFor="exampleInputEmail1">Điểm nổi bật</label>
-                                            <input type="email" className="form-control" id="expediency" name="expediency" />
+                                            <input type="text" className="form-control" id="expediency" name="expediency"
+                                                onChange={(e) => handle(e)} value={data.name} />
                                         </div>
-                                    </div> */}
+                                    </div>
 
 
                                     <div className="col-3" style={{}}>

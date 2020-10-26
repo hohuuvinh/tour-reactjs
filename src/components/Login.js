@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import fire from './../config/fire';
 import LoginForm from './LoginForm';
+
 import AdminManage from './AdminManage';
 
 export default class Login extends Component {
