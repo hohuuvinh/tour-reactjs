@@ -48,21 +48,11 @@ function Booking(props) {
                 </div>
                 <fieldset className="form-group">
                     <div className="row">
-                        <legend className="col-form-label col-sm-2 pt-0 font-weight-bold">Hình thức thanh toán:</legend>
-                        <div className="col-sm-10">
-                            <div className="form-check">
-                                <input className="form-check-input" type="radio" name="gridRadios" id="ChuyenKhoan" defaultValue="option1" defaultChecked />
-                                <label className="form-check-label" htmlFor="ChuyenKhoan">
-                                    Chuyển khoản
-                  </label>
-                            </div>
-                            <div className="form-check">
-                                <input className="form-check-input" type="radio" name="gridRadios" id="TrucTiep" defaultValue="option2" />
-                                <label className="form-check-label" htmlFor="TrucTiep">
-                                    Thanh toán trực tiếp
-                  </label>
-                            </div>
-                        </div>
+                        <label className="font-weight-bold">Hình thức thanh toán:</label>
+                        <select id="inputChild" className="form-control w-25 custom-select " style={{ marginLeft: '105px' }}>
+                            <option selected>Chuyển khoảng</option>
+                            <option>Thanh toán trực tiếp</option>
+                        </select>
                     </div>
                 </fieldset>
                 <div className="form-group row">

@@ -8,6 +8,8 @@ import Booking from './components/Booking';
 import Login from './components/Login';
 import AdminManage from './components/AdminManage';
 
+import EditPage from './components/EditPage';
+
 export default class App extends Component {
   render() {
     return (
@@ -24,7 +26,9 @@ export default class App extends Component {
         <Route exact path="/admin">
           <Login />
         </Route>
-
+        <Route exact path="/chinh-sua/:id">
+          <EditPage />
+        </Route>
       </Router>
     )
   }

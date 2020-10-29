@@ -14,7 +14,8 @@ export default class LoginForm extends Component {
         fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u) => {
             console.log(u)
         }).catch((err) => {
-            console.log(err);
+            // console.log(err.code);
+            alert(err.code)
         })
     }
     signup = (e) => {

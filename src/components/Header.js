@@ -7,7 +7,7 @@ export default class Header extends Component {
             <div className="container-fluid" style={{ background: '#3384bc' }}>
                 <div className="container p-0">
                     <nav className="navbar navbar-expand-xl navbar-light text-uppercase text-white">
-                        <a className="navbar-brand" href="#"><img src="img/logo.jpg" className="m-0 p-0" width="100px" height="60px" /></a>
+                        <a className="navbar-brand" href="#"><img src="../img/logo.jpg" className="m-0 p-0" width="100px" height="60px" /></a>
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav">
                                 <li exact to="/" className="nav-item active text-center" style={{ width: '140px', borderRight: '2px inset #c9c9c9' }}>
