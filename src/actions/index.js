@@ -25,40 +25,53 @@ export const actFetchItems = (items) => {
     }
 
 }
-
-
-export const actFetchCategorysRequest = () => {
-    return (dispatch) => {
-        return callApi('categorys', 'GET', null).then(res => {
-            dispatch(actFetchCategorys(res.data))
-            // console.log(res.data)
-        })
-    }
-
-}
-
-export const actFetchCategorys = (categorys) => {
+export const actDeleteItems = (id) => {
     return {
-        type: Types.FETCH_CATEGORYS,
-        categorys
+        type: Types.DELETE_PRODUCTS,
+        id
     }
 
 }
 
-export const actFetchCardsRequest = () => {
-    return (dispatch) => {
-        return callApi('cards', 'GET', null).then(res => {
-            dispatch(actFetchCards(res.data))
-        })
+// export const actFetchCategorysRequest = () => {
+//     return (dispatch) => {
+//         return callApi('categorys', 'GET', null).then(res => {
+//             dispatch(actFetchCategorys(res.data))
+//             // console.log(res.data)
+//         })
+//     }
+
+// }
+
+// export const actFetchCategorys = (categorys) => {
+//     return {
+//         type: Types.FETCH_CATEGORYS,
+//         categorys
+//     }
+
+// }
+
+// export const actFetchCardsRequest = () => {
+//     return (dispatch) => {
+//         return callApi('cards', 'GET', null).then(res => {
+//             dispatch(actFetchCards(res.data))
+//         })
+//     }
+
+// }
+
+// export const actFetchCards = (cards) => {
+//     return {
+//         type: Types.FETCH_CARDS,
+//         cards
+//     }
+
+// }
+
+export const actDeleteProductRequest = (id) => {
+    return dispatch => {
+        dispatch(actDeleteItems(id))
+        console.log(id);
+
     }
-
 }
-
-export const actFetchCards = (cards) => {
-    return {
-        type: Types.FETCH_CARDS,
-        cards
-    }
-
-}
-
